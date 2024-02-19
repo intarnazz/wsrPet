@@ -1,3 +1,40 @@
 .profile__user-info {
   align-items: flex-start;
+}
+
+.grid {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3em;
+}
+
+.adve__wrapper {
+  border-radius: 5px;
+  padding: 1em;
+}
+
+.adve li {
+  padding: 1em;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.adve img {
+  height: 170px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: #c5c5c5;
+}
+
+.activ__wrapper {
+  background-color: rgba(51, 255, 0, 0.2196078431);
+}
+
+.chek__wrapper {
+  background-color: rgba(238, 255, 0, 0.2196078431);
+}
+
+.archiv__wrapper {
+  background-color: rgba(0, 0, 0, 0.1019607843);
 }/*# sourceMappingURL=profile.css.map */

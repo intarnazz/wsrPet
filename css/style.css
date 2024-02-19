@@ -57,11 +57,52 @@ input:activ {
   border: none;
 }
 
+textarea {
+  outline: none;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  border: 1px #009700 solid;
+}
+
+textarea:activ {
+  outline: none;
+  border: none;
+}
+
+textarea {
+  resize: none;
+}
+
 .boxX {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1em;
+}
+
+.grid {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3em;
+}
+
+.start {
+  align-items: flex-start;
+}
+
+.pet li {
+  padding: 1em;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.pet img {
+  height: 170px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: #c5c5c5;
 }
 
 .boxY {
@@ -122,26 +163,6 @@ input:activ {
 
 .about__box {
   background-color: #fff;
-}
-
-.grid {
-  display: grid;
-  justify-content: space-between;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 3em;
-}
-
-.pet li {
-  padding: 1em;
-  background-color: #fff;
-  border-radius: 5px;
-}
-
-.pet img {
-  height: 170px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  background-color: #c5c5c5;
 }
 
 .form {

@@ -3,8 +3,137 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/add.css" />
+    <title>add</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="wrapper boxX">
+        <div>
+          <img src="" alt="logo" />
+        </div>
+        <nav>
+          <ul class="boxX">
+            <li>
+              <a href="./search.html">Поиск</a>
+            </li>
+            <li>
+              <a href="./register.html">Регистрация</a>
+            </li>
+            <li>
+              <a href="./profile.html">Личный кабинет</a>
+            </li>
+            <li>
+              <a href="./add.html">Добавить</a>
+            </li>
+
+            <li>
+              <a href="./orders-management.html">Отзывы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="add">
+      <div class="wrapper boxX">
+        <form class="form boxY">
+          <div class="boxX">
+            <label for="email">Email: </label
+            ><input
+              id="email"
+              name="email"
+              placeholder="email..."
+              type="email"
+            />
+            <p>*Неверный Email</p>
+          </div>
+          <div class="boxX">
+            <label for="kind">Вид животного: </label
+            ><input id="kind" name="kind" placeholder="Вид..." type="text" />
+            <p>*Неверный Вид</p>
+          </div>
+          <div class="boxX">
+            <label for="img1">фото животного: </label
+            ><input id="img1" name="img1" type="file" />
+            <p>*Неверное фото</p>
+          </div>
+          <div class="boxX">
+            <label for="img2"></label
+            ><input id="img2" name="img2" type="file" />
+            <p>*Неверное фото</p>
+          </div>
+          <div class="boxX">
+            <label for="img3"></label
+            ><input id="img3" name="img3" type="file" />
+            <p>*Неверное фото</p>
+          </div>
+          <div class="boxX start">
+            <label for="text">Дополнительная информация: </label
+            ><textarea id="text" name="text"></textarea>
+            <p>*Неверная информация</p>
+          </div>
+          <div class="boxX">
+            <label for="brand">Клеймо: </label
+            ><input id="brand" name="brand" type="text" />
+            <p>*Неверное Клеймо</p>
+          </div>
+          <div class="boxX">
+            <label for="adres">Регион: </label
+            ><input id="adres" name="adres" type="text" />
+            <p>*Неверное Клеймо</p>
+          </div>
+          <div class="boxX">
+            <label for="date">Дата, когда было найдено животное: </label
+            ><input id="date" name="date" type="datetime" />
+            <p>*Неверное Клеймо</p>
+          </div>
+          <div class="">
+            <input class="checkbox" id="agree" name="email" type="checkbox" />
+            <label for="agree">Согласен на обработку персональных данных</label>
+          </div>
+
+          <div class="">
+            <input class="button" value="Разместить объявление" type="submit" />
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="wrapper boxX footer__wrapper">
+        <div class="boxY">
+          <div class="">Телефон “8 (800)123-45-67”</div>
+          <div class="">e-mail: mail@newlife.ru</div>
+        </div>
+        <nav>
+          <ul class="boxY footer__list">
+            <li>
+              <a href="./index.html">Главная</a>
+            </li>
+            <li>
+              <a href="./search.html">Поиск</a>
+            </li>
+            <li>
+              <a href="./register.html">Регистрация</a>
+            </li>
+            <li>
+              <a href="./login.html">Авторизация</a>
+            </li>
+            <li>
+              <a href="./profile.html">Личный кабинет</a>
+            </li>
+            <li>
+              <a href="./add.html">Добавить</a>
+            </li>
+            <li>
+              <a href="./pet.html">Найдено животное</a>
+            </li>
+            <li>
+              <a href="./orders-management.html">Отзывы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
 </html>
