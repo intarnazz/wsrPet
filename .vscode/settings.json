@@ -1,0 +1,29 @@
+{
+    "workbench.colorTheme": "One Dark Pro Flat",
+    "files.autoSave": "afterDelay",
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "explorer.confirmDelete": false,
+    "terminal.external.windowsExec": "C:\\Windows\\System32\\bash.exe",
+    "workbench.editor.empty.hint": "hidden",
+    "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[php]": {
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    },
+    "liveSassCompile.settings.formats": [
+        
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/css",
+            "savePathReplacementPairs": null
+        }
+    ]
+}
