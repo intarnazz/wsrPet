@@ -61,12 +61,15 @@ textarea:activ
 textarea
   resize: none
 
-
 .boxX
   display: flex
   justify-content: space-between
   align-items: center
   gap: 1em
+
+.stretch
+  align-items: stretch
+
 .grid
   display: grid
   justify-content: space-between
@@ -93,6 +96,11 @@ textarea
 
 .flex1
   flex: 1
+
+.center
+  display: flex
+  align-items: center
+  justify-content: center
 
 .wrapper
   width: 1200px
@@ -135,8 +143,6 @@ textarea
   &__box
     background-color: #fff
 
-
-
 .form
   background-color: #fff
   margin: auto
@@ -161,4 +167,35 @@ textarea
 
 .footer a
   color: #fff
+
+.circle
+  border-radius: 40px
+  width: 40px
+  height: 40px
+  background-color: #cfcfcf
+  border: none
+  transition: .2s
+  &__active
+    background-color: #65d665
+
+.circle:hover
+  background-color: #52b152
+
+.pet-card img
+  object-fit: cover
+  width: 200px
+  height: 200px
+  border-radius: 10px
+
+.pet-card
+  &__grid
+    display: grid
+    justify-content: space-between
+    grid-template-columns: 1fr 1fr
+    gap: 1em
+
+.err
+  color: hsl(0, 100, 50)
+  background-color: hsl(0, 100, 94)
+  border: none
 
