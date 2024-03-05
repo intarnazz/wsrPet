@@ -7,7 +7,7 @@ body
   flex-direction: column
   justify-content: space-between
   gap: 4em
-  background-color: #eee
+  background-color: #fcf7e7
   height: 100dvh
 
 html,
@@ -22,6 +22,7 @@ h4
 
 header
   padding: 1em 0
+  background-color: #fff
 
 ul
   list-style: none
@@ -61,14 +62,26 @@ textarea:activ
 textarea
   resize: none
 
+nav ul
+  flex-wrap: wrap
+
+th
+  background-color: #00970060
+  padding: .5em 1em
+td
+  background-color: #0000001a
+  padding: .5em 1em
+
+table img 
+  width: 100px
+  height: 100px
+  object-fit: cover
+
 .boxX
   display: flex
   justify-content: space-between
   align-items: center
   gap: 1em
-
-.stretch
-  align-items: stretch
 
 .grid
   display: grid
@@ -97,6 +110,9 @@ textarea
 .flex1
   flex: 1
 
+.logo
+  width: 40px
+
 .center
   display: flex
   align-items: center
@@ -106,14 +122,22 @@ textarea
   width: 1200px
   margin: auto
 
+.stretch
+  align-items: stretch
+  justify-content: stretch
+
 .button
   cursor: pointer
   padding: .5em 1em
   border-radius: 5px
-  background-color: #fff
+  background-color: #0000000e
   display: flex
   justify-content: center
   border: 1px #009700 solid
+  transition: .2s
+
+.button:hover
+  background-color: #00970079
 
 .pet-slider img
   height: 170px
@@ -121,10 +145,13 @@ textarea
   background-color: #c5c5c5
 
 .pet-slider li
-  width: 350px
+  width: 340px
   padding: 1em
   background-color: #fff
   border-radius: 5px
+
+.pet-slider ul
+  gap: 2em
 
 .pet-slider
   &__activ
@@ -145,7 +172,6 @@ textarea
 
 .form
   background-color: #fff
-  margin: auto
   padding: 1em
 
 .feedback li
@@ -172,7 +198,7 @@ textarea
   border-radius: 40px
   width: 40px
   height: 40px
-  background-color: #cfcfcf
+  background-color: #0000001a
   border: none
   transition: .2s
   &__active
@@ -199,3 +225,87 @@ textarea
   background-color: hsl(0, 100, 94)
   border: none
 
+.item
+  font-size: 2em
+
+.select
+  outline: none
+  background-color: #fff
+
+.select:hover
+  background: #fff
+
+.form
+  &__wrapper img
+    width: 300px
+  &__wrapper
+    display: flex
+    gap: 0
+
+.tabbed
+  & [type="radio"]
+    display: none
+
+.tabs
+  display: flex
+  align-items: stretch
+  list-style: none
+  padding: 0
+  border-bottom: 1px solid #ccc
+
+.tab > label
+  display: block
+  margin-bottom: -1px
+  padding: 12px 15px
+  border: 1px solid #ccc
+  background: #eee
+  font-size: 12px
+  font-weight: 600
+  text-transform: uppercase
+  cursor: pointer
+  transition: all 0.3s
+
+.tab:hover label
+  border-top-color: #2e5f2e
+  color: #000
+
+.tab-content
+  display: none
+
+.tabbed [type="radio"]:nth-of-type(1):checked ~ .tabs .tab:nth-of-type(1) label,
+.tabbed [type="radio"]:nth-of-type(2):checked ~ .tabs .tab:nth-of-type(2) label
+  border-bottom-color: #fff
+  border-top-color: #65d665
+  background: #fff
+
+.tabbed [type="radio"]:nth-of-type(1):checked ~ .tab-content:nth-of-type(1),
+.tabbed [type="radio"]:nth-of-type(2):checked ~ .tab-content:nth-of-type(2)
+  display: block
+
+@media screen and ( max-width: 1200px)
+  .wrapper
+    width: auto
+  .pet-slider
+    &__item
+      display: none
+  .media-column
+    flex-direction: column
+    align-items: flex-start
+  .grid
+    gap: 1em
+    grid-template-columns: 1fr 1fr
+  th
+    padding: 0
+  td
+    padding: 0
+
+@media screen and ( max-width: 900px)
+  table
+    font-size: 11px
+
+@media screen and ( max-width: 470px)
+  .grid
+    gap: 1em
+    grid-template-columns: 1fr
+  .pet-slider li
+    width: auto

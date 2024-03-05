@@ -8,9 +8,12 @@
   </head>
   <body>
     <header>
-      <div class="wrapper boxX">
+      <div class="media-column wrapper boxX">
         <div>
-          <img src="" alt="logo" />
+          <a class="boxX" href="./index.html">
+            <img class="logo" src="./icons/logo.svg" alt="logo" />
+            <h2>Новая жизнь</h2>
+          </a>
         </div>
         <nav>
           <ul class="boxX">
@@ -21,12 +24,11 @@
               <a href="./register.html">Регистрация</a>
             </li>
             <li>
-              <a href="./profile.html">Личный кабинет</a>
+              <a href="./login.html">Личный кабинет</a>
             </li>
             <li>
               <a href="./add.html">Добавить</a>
             </li>
-
             <li>
               <a href="./orders-management.html">Отзывы</a>
             </li>
@@ -35,10 +37,13 @@
       </div>
     </header>
     <section class="pet-slider">
-      <div class="wrapper">
+      <div class="wrapper boxX">
+        <button class="button circle center">
+          <span class="item">←</span>
+        </button>
         <ul class="boxX">
-          <li class="boxY">
-            <img src="" alt="pet" />
+          <li class="boxY pet-slider__item">
+            <img src="./img/kotik.jpg" alt="pet" />
             <h4>Суслик</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -46,10 +51,14 @@
               ad non quia debitis vitae. Qui ullam alias aspernatur quis
               suscipit voluptatum sed?
             </p>
+            <div class="boxX">
+              <div class="">Город москва кузнецово 3а</div>
+              <div class="">10/12/2009</div>
+            </div>
             <a class="button">подробнее</a>
           </li>
           <li class="boxY pet-slider__activ">
-            <img src="" alt="pet" />
+            <img src="./img/kotik.jpg" alt="pet" />
             <h4>Кот</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -57,10 +66,14 @@
               ad non quia debitis vitae. Qui ullam alias aspernatur quis
               suscipit voluptatum sed?
             </p>
+            <div class="boxX">
+              <div class="">Город москва кузнецово 3а</div>
+              <div class="">10/12/2009</div>
+            </div>
             <a class="button">подробнее</a>
           </li>
-          <li class="boxY">
-            <img src="" alt="pet" />
+          <li class="boxY pet-slider__item">
+            <img src="./img/kotik.jpg" alt="pet" />
             <h4>Собака</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -68,36 +81,46 @@
               ad non quia debitis vitae. Qui ullam alias aspernatur quis
               suscipit voluptatum sed?
             </p>
+            <div class="boxX">
+              <div class="">Город москва кузнецово 3а</div>
+              <div class="">10/12/2009</div>
+            </div>
             <a class="button">подробнее</a>
           </li>
         </ul>
+        <button class="button circle center">
+          <span class="item">→</span>
+        </button>
       </div>
     </section>
     <section class="search">
       <div class="wrapper">
-        <form class="boxX">
-          <input
-            class="flex1"
-            placeholder="Введите вид животного..."
-            type="search"
-          />
-          <input value="Поиск" class="button" type="submit" />
-        </form>
+        <div class="boxY">
+          <h2>Поиск животного</h2>
+          <form class="boxX">
+            <input
+              class="flex1"
+              placeholder="Введите вид животного..."
+              type="search"
+            />
+            <input value="Поиск" class="button" type="submit" />
+          </form>
+        </div>
       </div>
     </section>
     <section class="about">
       <div class="wrapper boxY">
         <div class="boxY about__box">
           <h3>Помогли найти более 500 животных</h3>
-          <img src="" alt="pet" />
+          <img src="./img/много котиков не бывает.jpg" alt="pet" />
         </div>
         <div class="boxY about__box">
           <h3>Более трех лет способствуем возвращению питомцев к хозяевам</h3>
-          <img src="" alt="pet" />
+          <img src="./img/mori.jpg" alt="pet" />
         </div>
         <div class="boxY about__box">
           <h3>Все услуги оказываются бесплатно</h3>
-          <img src="" alt="pet" />
+          <img src="./img/free.jpeg" alt="pet" />
         </div>
       </div>
     </section>
@@ -105,7 +128,7 @@
       <div class="wrapper">
         <ul class="grid">
           <li class="boxY">
-            <img src="" alt="pet" />
+            <img src="./img/kotik.jpg" alt="pet" />
             <div class="boxX">
               <h4>Суслик</h4>
               <div>10.12.23</div>
@@ -120,10 +143,14 @@
               ad non quia debitis vitae. Qui ullam alias aspernatur quis
               suscipit voluptatum sed?
             </p>
+            <div class="boxX">
+              <div class="">Город москва кузнецово 3а</div>
+              <div class="">10/12/2009</div>
+            </div>
             <a class="button">подробнее</a>
           </li>
           <li class="boxY">
-            <img src="" alt="pet" />
+            <img src="./img/kotik.jpg" alt="pet" />
             <div class="boxX">
               <h4>Суслик</h4>
               <div>10.12.23</div>
@@ -138,10 +165,14 @@
               ad non quia debitis vitae. Qui ullam alias aspernatur quis
               suscipit voluptatum sed?
             </p>
+            <div class="boxX">
+              <div class="">Город москва кузнецово 3а</div>
+              <div class="">10/12/2009</div>
+            </div>
             <a class="button">подробнее</a>
           </li>
           <li class="boxY">
-            <img src="" alt="pet" />
+            <img src="./img/kotik.jpg" alt="pet" />
             <div class="boxX">
               <h4>Суслик</h4>
               <div>10.12.23</div>
@@ -156,10 +187,14 @@
               ad non quia debitis vitae. Qui ullam alias aspernatur quis
               suscipit voluptatum sed?
             </p>
+            <div class="boxX">
+              <div class="">Город москва кузнецово 3а</div>
+              <div class="">10/12/2009</div>
+            </div>
             <a class="button">подробнее</a>
           </li>
           <li class="boxY">
-            <img src="" alt="pet" />
+            <img src="./img/kotik.jpg" alt="pet" />
             <div class="boxX">
               <h4>Суслик</h4>
               <div>10.12.23</div>
@@ -174,10 +209,14 @@
               ad non quia debitis vitae. Qui ullam alias aspernatur quis
               suscipit voluptatum sed?
             </p>
+            <div class="boxX">
+              <div class="">Город москва кузнецово 3а</div>
+              <div class="">10/12/2009</div>
+            </div>
             <a class="button">подробнее</a>
           </li>
           <li class="boxY">
-            <img src="" alt="pet" />
+            <img src="./img/kotik.jpg" alt="pet" />
             <div class="boxX">
               <h4>Суслик</h4>
               <div>10.12.23</div>
@@ -192,10 +231,14 @@
               ad non quia debitis vitae. Qui ullam alias aspernatur quis
               suscipit voluptatum sed?
             </p>
+            <div class="boxX">
+              <div class="">Город москва кузнецово 3а</div>
+              <div class="">10/12/2009</div>
+            </div>
             <a class="button">подробнее</a>
           </li>
           <li class="boxY">
-            <img src="" alt="pet" />
+            <img src="./img/kotik.jpg" alt="pet" />
             <div class="boxX">
               <h4>Суслик</h4>
               <div>10.12.23</div>
@@ -210,6 +253,10 @@
               ad non quia debitis vitae. Qui ullam alias aspernatur quis
               suscipit voluptatum sed?
             </p>
+            <div class="boxX">
+              <div class="">Город москва кузнецово 3а</div>
+              <div class="">10/12/2009</div>
+            </div>
             <a class="button">подробнее</a>
           </li>
         </ul>
@@ -229,7 +276,7 @@
           </div>
           <div class="boxX">
             <label for="pet-select">Вид животного: </label
-            ><select name="pet-select" id="pet-select">
+            ><select class="button flex1 select" name="pet-select" id="pet-select">
               <option>Котик</option>
               <option>Собачек</option>
               <option>Птичкин</option>
@@ -253,9 +300,9 @@
     </section>
     <section class="feedback">
       <div class="wrapper">
-        <ul class="boxX">
+        <ul class="boxX media-column">
           <li class="boxY">
-            <img src="" alt="pet" />
+            <img src="./img/kotik.jpg" alt="pet" />
             <div class="boxX">
               <h4>петя</h4>
               <div>10.12.23</div>
@@ -266,9 +313,13 @@
               ad non quia debitis vitae. Qui ullam alias aspernatur quis
               suscipit voluptatum sed?
             </p>
+            <div class="boxX">
+              <div class="">Город москва кузнецово 3а</div>
+              <div class="">10/12/2009</div>
+            </div>
           </li>
           <li class="boxY">
-            <img src="" alt="pet" />
+            <img src="./img/kotik.jpg" alt="pet" />
             <div class="boxX">
               <h4>Иван</h4>
               <div>10.12.23</div>
@@ -279,9 +330,13 @@
               ad non quia debitis vitae. Qui ullam alias aspernatur quis
               suscipit voluptatum sed?
             </p>
+            <div class="boxX">
+              <div class="">Город москва кузнецово 3а</div>
+              <div class="">10/12/2009</div>
+            </div>
           </li>
           <li class="boxY">
-            <img src="" alt="pet" />
+            <img src="./img/kotik.jpg" alt="pet" />
             <div class="boxX">
               <h4>Крутыш</h4>
               <div>10.12.23</div>
@@ -292,6 +347,10 @@
               ad non quia debitis vitae. Qui ullam alias aspernatur quis
               suscipit voluptatum sed?
             </p>
+            <div class="boxX">
+              <div class="">Город москва кузнецово 3а</div>
+              <div class="">10/12/2009</div>
+            </div>
           </li>
         </ul>
       </div>
@@ -300,7 +359,7 @@
       <div class="wrapper boxX">
         <form class="form boxY">
           <div class="boxX">
-            <label for="email">Район: </label
+            <label for="email">Email: </label
             ><input
               class="flex1"
               id="email"

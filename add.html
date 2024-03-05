@@ -11,7 +11,10 @@
     <header>
       <div class="wrapper boxX">
         <div>
-          <img src="" alt="logo" />
+          <a class="boxX" href="./index.html">
+            <img class="logo" src="./icons/logo.svg" alt="logo" />
+            <h2>Новая жизнь</h2>
+          </a>
         </div>
         <nav>
           <ul class="boxX">
@@ -36,67 +39,236 @@
       </div>
     </header>
     <section class="add">
-      <div class="wrapper boxX">
-        <form class="form boxY">
-          <div class="boxX">
-            <label for="email">Email: </label
-            ><input
-              id="email"
-              name="email"
-              placeholder="email..."
-              type="email"
-            />
-            <p>*Неверный Email</p>
-          </div>
-          <div class="boxX">
-            <label for="kind">Вид животного: </label
-            ><input id="kind" name="kind" placeholder="Вид..." type="text" />
-            <p>*Неверный Вид</p>
-          </div>
-          <div class="boxX">
-            <label for="img1">фото животного: </label
-            ><input id="img1" name="img1" type="file" />
-            <p>*Неверное фото</p>
-          </div>
-          <div class="boxX">
-            <label for="img2"></label
-            ><input id="img2" name="img2" type="file" />
-            <p>*Неверное фото</p>
-          </div>
-          <div class="boxX">
-            <label for="img3"></label
-            ><input id="img3" name="img3" type="file" />
-            <p>*Неверное фото</p>
-          </div>
-          <div class="boxX start">
-            <label for="text">Дополнительная информация: </label
-            ><textarea id="text" name="text"></textarea>
-            <p>*Неверная информация</p>
-          </div>
-          <div class="boxX">
-            <label for="brand">Клеймо: </label
-            ><input id="brand" name="brand" type="text" />
-            <p>*Неверное Клеймо</p>
-          </div>
-          <div class="boxX">
-            <label for="adres">Регион: </label
-            ><input id="adres" name="adres" type="text" />
-            <p>*Неверное Клеймо</p>
-          </div>
-          <div class="boxX">
-            <label for="date">Дата, когда было найдено животное: </label
-            ><input id="date" name="date" type="datetime" />
-            <p>*Неверное Клеймо</p>
-          </div>
-          <div class="">
-            <input class="checkbox" id="agree" name="email" type="checkbox" />
-            <label for="agree">Согласен на обработку персональных данных</label>
-          </div>
+      <div class="wrapper boxX center">
+        <div class="page-content">
+          <div class="tabbed">
+            <input type="radio" id="tab1" name="css-tabs" checked />
+            <input type="radio" id="tab2" name="css-tabs" />
+            <ul class="tabs">
+              <li class="tab"><label for="tab1">Добавить объявление</label></li>
+              <li class="tab">
+                <label for="tab2">Добавить объявление с регистрацией</label>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <form class="form boxY">
+                <div class="boxX">
+                  <label for="email">Телефон: </label
+                  ><input
+                    id="tel"
+                    name="tel"
+                    placeholder="телефон..."
+                    type="tel"
+                  />
+                  <p>*Неверный телефон</p>
+                </div>
+                <div class="boxX">
+                  <label for="email">Email: </label
+                  ><input
+                    id="email"
+                    name="email"
+                    placeholder="email..."
+                    type="email"
+                  />
+                  <p>*Неверный Email</p>
+                </div>
+                <div class="boxX">
+                  <label for="kind">Вид животного: </label
+                  ><input
+                    id="kind"
+                    name="kind"
+                    placeholder="Вид..."
+                    type="text"
+                  />
+                  <p>*Неверный Вид</p>
+                </div>
+                <div class="boxX">
+                  <label for="img1">фото животного: </label
+                  ><input id="img1" name="img1" type="file" />
+                  <p>*Неверное фото</p>
+                </div>
+                <div class="boxX">
+                  <label for="img2"></label
+                  ><input id="img2" name="img2" type="file" />
+                  <p>*Неверное фото</p>
+                </div>
+                <div class="boxX">
+                  <label for="img3"></label
+                  ><input id="img3" name="img3" type="file" />
+                  <p>*Неверное фото</p>
+                </div>
+                <div class="boxX start">
+                  <label for="text">Дополнительная информация: </label
+                  ><textarea id="text" name="text"></textarea>
+                  <p>*Неверная информация</p>
+                </div>
+                <div class="boxX">
+                  <label for="brand">Клеймо: </label
+                  ><input id="brand" name="brand" type="text" />
+                  <p>*Неверное Клеймо</p>
+                </div>
+                <div class="boxX">
+                  <label for="adres">Регион: </label
+                  ><input id="adres" name="adres" type="text" />
+                  <p>*Неверное Клеймо</p>
+                </div>
+                <div class="boxX">
+                  <label for="date">Дата, когда было найдено животное: </label
+                  ><input id="date" name="date" type="date" />
+                  <p>*Неверное Клеймо</p>
+                </div>
+                <div class="">
+                  <input
+                    class="checkbox"
+                    id="agree"
+                    name="email"
+                    type="checkbox"
+                  />
+                  <label for="agree"
+                    >Согласен на обработку персональных данных</label
+                  >
+                </div>
 
-          <div class="">
-            <input class="button" value="Разместить объявление" type="submit" />
+                <div class="">
+                  <input
+                    class="button"
+                    value="Разместить объявление"
+                    type="submit"
+                  />
+                </div>
+              </form>
+            </div>
+            <div class="tab-content">
+              <form class="form boxY">
+                <div class="boxX">
+                  <label for="first_name_reg">Имя: </label
+                  ><input
+                    id="first_name_reg"
+                    name="first_name"
+                    placeholder="Имя..."
+                    type="text"
+                  />
+                  <p>*Неверное имя</p>
+                </div>
+                <div class="boxX">
+                  <label for="first_name_reg">Фамилия: </label
+                  ><input
+                    id="Last_name_reg"
+                    name="Last_name"
+                    placeholder="Фамилия..."
+                    type="text"
+                  />
+                  <p>*Неверная фамилия</p>
+                </div>
+                <div class="boxX">
+                  <label for="password_reg">Пароль: </label
+                  ><input
+                    id="password_reg"
+                    name="password"
+                    placeholder="Пароль..."
+                    type="password"
+                  />
+                  <p>*Неверный пароль</p>
+                </div>
+                <div class="boxX">
+                  <label for="repit_password_reg">Повторите пароль: </label
+                  ><input
+                    id="repit_password_reg"
+                    name="repit_password"
+                    placeholder="Пароль..."
+                    type="repit_password"
+                  />
+                  <p>*Неверный пароль</p>
+                </div>
+                <div class="boxX">
+                  <label for="tel_reg">Телефон: </label
+                  ><input
+                    id="tel_reg"
+                    name="tel"
+                    placeholder="телефон..."
+                    type="tel"
+                  />
+                  <p>*Неверный телефон</p>
+                </div>
+                <div class="boxX">
+                  <label for="email_reg">Email: </label
+                  ><input
+                    id="email_reg"
+                    name="email"
+                    placeholder="email..."
+                    type="email"
+                  />
+                  <p>*Неверный Email</p>
+                </div>
+                <div class="boxX">
+                  <label for="kind_reg">Вид животного: </label
+                  ><input
+                    id="kind_reg"
+                    name="kind"
+                    placeholder="Вид..."
+                    type="text"
+                  />
+                  <p>*Неверный Вид</p>
+                </div>
+                <div class="boxX">
+                  <label for="img1_reg">фото животного: </label
+                  ><input id="img1_reg" name="img1" type="file" />
+                  <p>*Неверное фото</p>
+                </div>
+                <div class="boxX">
+                  <label for="img2_reg"></label
+                  ><input id="img2_reg" name="img2" type="file" />
+                  <p>*Неверное фото</p>
+                </div>
+                <div class="boxX">
+                  <label for="img3_reg"></label
+                  ><input id="img3_reg" name="img3" type="file" />
+                  <p>*Неверное фото</p>
+                </div>
+                <div class="boxX start">
+                  <label for="text_reg">Дополнительная информация: </label
+                  ><textarea id="text_reg" name="text"></textarea>
+                  <p>*Неверная информация</p>
+                </div>
+                <div class="boxX">
+                  <label for="brand_reg">Клеймо: </label
+                  ><input id="brand_reg" name="brand" type="text" />
+                  <p>*Неверное Клеймо</p>
+                </div>
+                <div class="boxX">
+                  <label for="adres_reg">Регион: </label
+                  ><input id="adres_reg" name="adres" type="text" />
+                  <p>*Неверное Клеймо</p>
+                </div>
+                <div class="boxX">
+                  <label for="date_reg"
+                    >Дата, когда было найдено животное: </label
+                  ><input id="date_reg" name="date" type="date" />
+                  <p>*Неверное Клеймо</p>
+                </div>
+                <div class="">
+                  <input
+                    class="checkbox"
+                    id="agree"
+                    name="email"
+                    type="checkbox"
+                  />
+                  <label for="agree"
+                    >Согласен на обработку персональных данных</label
+                  >
+                </div>
+
+                <div class="">
+                  <input
+                    class="button"
+                    value="Разместить объявление"
+                    type="submit"
+                  />
+                </div>
+              </form>
+            </div>
           </div>
-        </form>
+        </div>
       </div>
     </section>
     <footer class="footer">
